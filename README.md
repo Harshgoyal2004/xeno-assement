@@ -23,7 +23,7 @@ graph TD
     User[User] -->|Visits Dashboard| Frontend[Next.js Frontend]
     Frontend -->|API Calls| Backend[Node.js Express Backend]
     Backend -->|Read/Write| DB[(SQLite Database)]
-    Backend -->|Sync Data| Shopify[Shopify API (Mock)]
+    Backend -->|Sync Data| Shopify["Shopify API (Mock)"]
     Scheduler[Cron Job] -->|Triggers Sync| Backend
 ```
 
